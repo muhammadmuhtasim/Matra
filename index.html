@@ -76,7 +76,6 @@
             <article class="list-row"><span class="row-number">02</span><div><h3>One size doesn't fit every region</h3><p>Word choices and spelling conventions can differ across Bangla-speaking communities.</p></div><span class="row-mark">↗</span></article>
             <article class="list-row"><span class="row-number">03</span><div><h3>Prediction meets privacy</h3><p>Useful suggestions should not require users to surrender control over what they type.</p></div><span class="row-mark">↗</span></article>
           </div>
-          <p class="source-note">Framing based on Matra's stated project goals; comparative claims are not independently benchmarked here.</p>
         </div>
       </div>
     </section>
@@ -129,7 +128,6 @@
             <div role="button" tabindex="0" class="script-item" data-profile="syl" data-lang="syl" data-label="SYLOTI NAGRI PROFILE" data-word="ꠙꠣꠘꠤ" data-transliteration="fani → ꠙꠣꠘꠤ" aria-pressed="false"><span>06</span><div><h3>Syloti Nagri</h3><p class="script-sample" lang="syl">ꠙꠣꠘꠤ</p><small>SYLHETI_PROFILE</small></div><span class="script-select-mark" aria-hidden="true">↗</span></div>
           </div>
         </div>
-        <p class="source-note">The report lists these profiles; actual language quality and coverage should be validated with native speakers and test corpora.</p>
       </div>
     </section>
 
@@ -154,7 +152,6 @@
           <div class="engine-step engine-output"><span class="engine-step-label">OUTPUT</span><div class="output-glyph" id="engine-output" lang="bn">ক্ষ</div><p id="engine-output-caption">Illustrative output</p></div>
         </div>
         <div class="engine-foot"><span>RULE-BASED TRANSLITERATION</span><span>GREEDY PREFIX CASCADE</span><span>REGIONAL PROFILES</span></div>
-        <p class="source-note light-source-note">Illustrative flow only; the displayed keystrokes are a visual example, not a verified mapping test case.</p>
       </div>
     </section>
 
@@ -176,7 +173,6 @@
             <article><span class="privacy-index">03</span><div><h3>Optional cloud assistance</h3><p>Gemini prediction is described as user-toggled. It should be presented distinctly from the default local-first path.</p></div></article>
           </div>
         </div>
-        <div class="privacy-caveat"><span aria-hidden="true">!</span><p><strong>Claim carefully.</strong> These are architecture descriptions from the project report, not an independent security audit. The report also mentions opt-in diagnostics; verify the shipped defaults and data flows before claiming absolute network isolation.</p></div>
         <div class="privacy-gallery" role="group" aria-label="Clipboard, security, and privacy settings screens">
           <figure class="privacy-shot"><div class="device-frame"><img src="assets/clipboard_history.jpg" alt="Matra clipboard history with stored entries" width="576" height="1280" loading="lazy" decoding="async"></div><figcaption>Clipboard history</figcaption></figure>
           <figure class="privacy-shot"><div class="device-frame"><img src="assets/security_feed.jpg" alt="Matra security feed showing a cloud prediction setting and audit events" width="576" height="1280" loading="lazy" decoding="async"></div><figcaption>Security activity</figcaption></figure>
@@ -197,7 +193,6 @@
         </div>
         <p class="arch-detail" id="arch-detail" aria-live="polite">Select a layer to inspect its responsibility.</p>
         <div class="architecture-footer"><span>REPOSITORY PATTERN</span><span>STRATEGY PATTERN</span><span>STATEFLOW / SHARED FLOW</span><span>ASYNCHRONOUS WORK</span></div>
-        <p class="source-note">Diagram is a presentation-level simplification of the architecture in the report; it is not a full dependency graph.</p>
       </div>
     </section>
 
@@ -209,7 +204,6 @@
           <article class="performance-card"><span class="metric-label">PREDICTION</span><div class="metric-illustration"><span class="metric-onnx">ONNX</span><span class="metric-arrow">→</span><span class="metric-local">LOCAL</span></div><h3>On-device inference path</h3><p>The report states a sub-15 ms target for quantized ONNX prediction; no benchmark evidence is included in the supplied report.</p></article>
           <article class="performance-card"><span class="metric-label">MEMORY</span><div class="metric-illustration buffer-visual"><span>StringBuilder</span><span class="buffer-blocks"><i></i><i></i><i></i><i></i><i></i></span></div><h3>Reduce allocation churn</h3><p>Static pre-allocation of the phonetic composer buffer is described as a way to reduce garbage-collection spikes.</p></article>
         </div>
-        <div class="evidence-banner"><span class="evidence-mark">↗</span><div><strong>Implementation intent ≠ measured outcome.</strong><p>Use profiler traces, device coverage, latency distributions, and repeatable test conditions to substantiate performance claims.</p></div></div>
       </div>
     </section>
 
@@ -224,7 +218,6 @@
           <div class="eval-row"><span class="eval-area">Privacy & network</span><span>Observe default traffic; test cloud opt-in and diagnostics settings</span><span class="status status-planned">Defaults need verification</span></div>
           <div class="eval-row"><span class="eval-area">Accessibility</span><span>TalkBack, contrast, scaling, hit-target testing</span><span class="status status-planned">Features described; results absent</span></div>
         </div>
-        <p class="source-note light-source-note">This is a proposed evaluation checklist derived from the capabilities and claims described in the report, not a claim that these tests have been completed.</p>
       </div>
     </section>
 

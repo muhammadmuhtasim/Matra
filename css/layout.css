@@ -51,9 +51,7 @@ h2 em, h1 em { font-family: var(--serif); font-weight: 400; letter-spacing: -.06
 .privacy-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 5vw, 70px); align-items: start; margin-top: 36px; padding-top: 30px; border-top: 1px solid var(--line); }
 .privacy-shot { width: min(100%, 190px); justify-self: center; }
 .privacy-shot figcaption { justify-content: center; }
-.source-note { margin-top: 28px; color: #85877f; font: 10px/1.6 var(--mono); max-width: 760px; }
 .light-copy { color: #c0c5bb; }
-.light-source-note { color: #8e978b; }
 .split-layout { display: grid; grid-template-columns: .85fr 1fr; gap: clamp(44px, 9vw, 150px); align-items: start; }
 .editorial-copy { padding-top: 6px; }
 .editorial-copy .lead { margin-bottom: 40px; }
@@ -132,10 +130,6 @@ h2 em, h1 em { font-family: var(--serif); font-weight: 400; letter-spacing: -.06
 .privacy-index { color: var(--accent-dark); font: 10px var(--mono); }
 .privacy-points h3 { font-size: 19px; margin-bottom: 7px; }
 .privacy-points p { color: var(--muted); font-size: 13px; line-height: 1.65; }
-.privacy-caveat { margin-top: 24px; display: flex; gap: 12px; align-items: flex-start; padding: 16px 18px; background: #e8e6dc; }
-.privacy-caveat > span { display: grid; place-items: center; flex: 0 0 20px; height: 20px; border: 1px solid #898d7f; border-radius: 50%; font: 11px var(--mono); }
-.privacy-caveat p { color: #686b62; font-size: 11px; line-height: 1.6; }
-.privacy-caveat strong { color: var(--ink); }
 .architecture { max-width: 900px; margin: 0 auto; }
 .arch-layer { padding: 20px 22px; border: 1px solid #ceccc1; }
 .arch-layer-heading { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: baseline; }
@@ -162,10 +156,6 @@ h2 em, h1 em { font-family: var(--serif); font-weight: 400; letter-spacing: -.06
 .buffer-blocks { display: flex; gap: 5px; }.buffer-blocks i { display: block; width: 32px; height: 19px; background: #d4dccb; border: 1px solid #c0cbb5; }.buffer-blocks i:nth-child(2), .buffer-blocks i:nth-child(4) { background: #9ebc88; }
 .performance-card h3 { font-size: 21px; margin-bottom: 9px; }
 .performance-card p { color: var(--muted); font-size: 13px; line-height: 1.65; }
-.evidence-banner { display: flex; gap: 15px; align-items: flex-start; margin-top: 22px; padding: 20px; background: #e8e6dc; }
-.evidence-mark { font-size: 22px; color: var(--accent-dark); }
-.evidence-banner strong { font-size: 13px; font-weight: 600; }
-.evidence-banner p { margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .evaluation-table { border-top: 1px solid var(--dark-line); }
 .eval-row { display: grid; grid-template-columns: .75fr 1.55fr 1fr; gap: 22px; padding: 19px 0; border-bottom: 1px solid var(--dark-line); align-items: center; }
 .eval-head { color: #8f998b; font: 9px var(--mono); letter-spacing: .1em; }
