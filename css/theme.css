@@ -14,7 +14,7 @@
   --mono: "DM Mono", monospace;
   /* Script faces for the native words in Chapter 4 (see css/fonts.css). */
   --font-uxa: "Uxa", "Noto Serif Bengali", Georgia, serif;
-  --font-meetei: "Noto Sans Meetei Mayek", "Noto Sans Bengali", sans-serif;
+  --font-meetei: "Noto Sans Meetei Mayek", sans-serif;
   --font-chakma: "Noto Sans Chakma", sans-serif;
   --font-syloti: "Noto Sans Syloti Nagri", sans-serif;
   --topbar-height: 66px;

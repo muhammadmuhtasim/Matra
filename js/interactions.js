@@ -227,6 +227,7 @@
         previewWord.textContent        = button.dataset.word;
         previewTranslation.textContent = button.dataset.transliteration;
         previewWord.setAttribute('lang', button.dataset.lang || 'bn');
+        previewTranslation.setAttribute('lang', button.dataset.lang || 'bn');
         return;
       }
 
@@ -243,6 +244,7 @@
         previewWord.textContent        = button.dataset.word;
         previewTranslation.textContent = button.dataset.transliteration;
         previewWord.setAttribute('lang', button.dataset.lang || 'bn');
+        previewTranslation.setAttribute('lang', button.dataset.lang || 'bn');
       });
 
       /* 3. New word slides in from right */
