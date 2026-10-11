@@ -234,8 +234,8 @@ kbd { display: inline-grid; place-items: center; min-width: 21px; height: 21px; 
     margin: 0;
     padding-top: calc(var(--topbar-height) + 56px);
     padding-bottom: calc(var(--footer-height) + 48px);
-    padding-left: calc(var(--page-gutter) + max(0px, (100% - 1180px) / 2));
-    padding-right: calc(var(--page-gutter) + max(0px, (100% - 1180px) / 2));
+    padding-left: max(var(--page-gutter), (100% - 1180px) / 2);
+    padding-right: max(var(--page-gutter), (100% - 1180px) / 2);
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -271,6 +271,11 @@ kbd { display: inline-grid; place-items: center; min-width: 21px; height: 21px; 
   html.cinematic-mode #presentation .feature-card { min-height: 210px; }
   html.cinematic-mode #presentation .script-main { min-height: 300px; }
   html.cinematic-mode #presentation .vault-visual { min-height: 300px; }
+  /* The closing statement must not cap the full-width scroll surface (that
+     collapses its padding box). Cap its content column instead and centre it,
+     reproducing the non-cinematic 1050px column. */
+  html.cinematic-mode #presentation .closing-statement { max-width: none; }
+  html.cinematic-mode #presentation .closing-statement > * { max-width: 1050px; margin-left: auto; margin-right: auto; }
   html.cinematic-mode #presentation .performance-card { min-height: 230px; }
   html.cinematic-mode .presentation-controls { z-index: 130; }
   html.cinematic-mode .chapter-rail { z-index: 130; }
