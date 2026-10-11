@@ -1,0 +1,55 @@
+ @media (max-width: 1000px) {
+  :root { --page-gutter: 7vw; }
+  .chapter-rail { left: 12px; }
+  .split-layout { gap: 6vw; }
+  .feature-card { padding: 19px; }
+  .feature-card-wide { grid-template-columns: 22px 44px 1fr; }
+  .feature-card-wide .feature-tag { display: none; }
+  .privacy-layout { gap: 4%; }
+  .orbit-a { right: 0; }
+}
+@media (max-width: 760px) {
+  :root { --topbar-height: 58px; --footer-height: 58px; --page-gutter: 24px; }
+  .topbar { padding: 0 18px; }.topbar-center { display: none; }.topbar-actions { gap: 10px; }.button-label { display: none; }
+  .chapter-rail { display: none; }
+  .chapter { padding-top: calc(var(--topbar-height) + 48px); padding-bottom: calc(var(--footer-height) + 45px); }
+  .project-title-row { gap: 8px; }
+  .project-logo { width: clamp(88px, 26vw, 104px); }
+  .product-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; margin: 28px 0 38px; }
+  .product-shot { width: min(100%, 136px); }
+  .privacy-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .privacy-shot { width: 100%; }
+  .chapter-hero { padding-top: calc(var(--topbar-height) + 30px); }
+  .hero-title { font-size: clamp(62px, 16vw, 112px); }
+  .hero-bottom { grid-template-columns: auto 1fr; gap: 18px; margin-top: 55px; }
+  .chapter-index { display: none; }
+  .scroll-cue { bottom: -15px; }
+  .split-layout, .script-showcase, .privacy-layout { grid-template-columns: 1fr; gap: 40px; }
+  .section-heading-wide { margin-bottom: 35px; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .feature-card { min-height: 240px; }.feature-card-wide { grid-column: span 2; }
+  .script-main { min-height: 280px; padding: 25px; }.script-word { margin: 34px 0 18px; }
+  .engine-demo { grid-template-columns: 1fr; gap: 10px; margin-top: 35px; }
+  .engine-step { min-height: 155px; }.engine-connector { height: 30px; flex-direction: row; }.engine-connector span { width: 35px; }.engine-connector span::after { right: -2px; top: -10px; transform: rotate(90deg); }
+  .engine-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  .engine-foot > span { text-align: left; white-space: normal; }
+  .vault-visual { min-height: 320px; }.ring-one { width: 260px; height: 260px; }.ring-two { width: 190px; height: 190px; }
+  .performance-grid { grid-template-columns: 1fr; }.performance-card { min-height: 230px; }
+  .eval-row { grid-template-columns: .8fr 1.4fr; gap: 10px; }.eval-row > span:last-child { grid-column: 2; }.eval-head > span:last-child { grid-column: 2; }
+  .architecture-footer { flex-wrap: wrap; justify-content: flex-start; }.arch-nodes { grid-template-columns: 1fr; }.arch-layer-heading small { line-height: 1.5; }
+  .closing-details { flex-direction: column; align-items: flex-start; }.closing-details span { white-space: normal; }
+  .presentation-controls { padding: 0 16px; grid-template-columns: 1fr auto; }.control-hint { display: none; }.control-center { justify-content: flex-start; }.control-buttons { grid-column: 2; grid-row: 1; }
+}
+@media (min-width: 361px) and (max-width: 760px) {
+  .button-label { display: inline; }
+}
+@media (max-width: 430px) {
+  .wordmark { font-size: 10px; }.wordmark-icon { width: 26px; height: 26px; }
+  .feature-grid { grid-template-columns: 1fr; }.feature-card-wide { grid-column: auto; display: flex; min-height: 220px; }.feature-card-wide .feature-symbol { margin: 22px 0; }
+  .script-item { grid-template-columns: 22px 1fr; }.script-item small { grid-column: 2; text-align: left; max-width: none; }
+  .eval-row { grid-template-columns: 1fr; gap: 5px; }.eval-row > span:last-child, .eval-head > span:last-child { grid-column: auto; }
+  .final-bottom { flex-wrap: wrap; }.final-bottom span:nth-child(2) { display: none; }
+  .control-center { font-size: 9px; }
+  .privacy-gallery { grid-auto-columns: minmax(145px, 62vw); grid-auto-flow: column; grid-template-columns: none; overflow-x: auto; padding: 24px 2px 14px; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+  .privacy-shot { width: min(100%, 190px); scroll-snap-align: start; }
+}

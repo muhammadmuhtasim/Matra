@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Local script fonts
+   Bundled from assets/fonts so the native words in Chapter 4 render with the
+   correct glyphs and shaping, independent of the Google Fonts web fonts.
+   ========================================================================== */
+
+/* Bengali display face (used for the Assamese profile). */
+@font-face {
+  font-family: "Uxa";
+  src: url("../assets/fonts/Uxa%20Final.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Meetei Mayek — Manipuri (variable weight). */
+@font-face {
+  font-family: "Noto Sans Meetei Mayek";
+  src: url("../assets/fonts/Noto_Sans_Meetei_Mayek/NotoSansMeeteiMayek-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Chakma. */
+@font-face {
+  font-family: "Noto Sans Chakma";
+  src: url("../assets/fonts/Noto_Sans_Chakma/NotoSansChakma-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Syloti Nagri — Sylheti. */
+@font-face {
+  font-family: "Noto Sans Syloti Nagri";
+  src: url("../assets/fonts/Noto_Sans_Syloti_Nagri/NotoSansSylotiNagri-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,78 @@
+ .js-ready .chapter:not(.chapter-hero) .section-heading, .js-ready .chapter:not(.chapter-hero) .feature-card, .js-ready .chapter:not(.chapter-hero) .list-row, .js-ready .chapter:not(.chapter-hero) .script-item, .js-ready .chapter:not(.chapter-hero) .arch-layer, .js-ready .chapter:not(.chapter-hero) .performance-card, .js-ready .chapter:not(.chapter-hero) .roadmap-item { will-change: transform, opacity; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+html.reduced-motion { scroll-behavior: auto !important; }
+html.instant-scroll { scroll-behavior: auto !important; }
+html.reduced-motion *, html.reduced-motion *::before, html.reduced-motion *::after {
+  animation-duration: .01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: .01ms !important;
+}
+
+/* ── Engine demo ─────────────────────────────────────────────────────── */
+.engine-controls { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin: 28px 0 -25px; }
+.engine-controls-label,.engine-controls-hint { color:#98a294; font:9px var(--mono); letter-spacing:.08em; }
+.engine-controls-label { margin-right:8px; }
+.engine-controls-hint { margin-left:auto; letter-spacing:0; }
+.sequence-choice { padding:8px 13px; border:1px solid #596355; color:#dfe4d8; background:transparent; font:11px var(--mono); cursor:pointer; transition:background .2s,border-color .2s,color .2s; }
+.sequence-choice:hover,.sequence-choice.is-selected { background:var(--accent); border-color:var(--accent); color:var(--dark); }
+.sequence-choice:focus-visible,.script-item:focus-visible,.vault-core:focus-visible,.arch-layer:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+.match-stack span.match-active { border-color:var(--accent); color:var(--accent); background:rgba(162,195,141,.08); }
+
+/* ── Script profile selector ─────────────────────────────────────────── */
+.script-item { width:100%; text-align:left; color:inherit; background:transparent; font:inherit; cursor:pointer; transition:padding .2s,background .2s; }
+.script-item:hover,.script-item.is-selected { padding-left:12px; background:rgba(82,125,54,.07); }
+.script-item .script-select-mark { color:var(--accent-dark); opacity:0; transition:opacity .2s; }
+.script-item.is-selected .script-select-mark { opacity:1; }
+.script-preview-hint { margin-top:20px; color:var(--muted); font:9px var(--mono); letter-spacing:.04em; }
+/* Prevent layout shift on script-word during GSAP animation */
+#script-preview-word { display:block; min-height:1em; }
+
+/* ── Privacy vault ───────────────────────────────────────────────────── */
+.vault-core { border:0; font:inherit; cursor:pointer; position:relative; z-index:2;
+  transition:transform .25s, box-shadow .25s; }
+.vault-core:hover { transform:scale(1.04); box-shadow:0 0 0 14px rgba(82,125,54,.12); }
+.vault-action { color:#d0d8c8; font:7px var(--mono); letter-spacing:.08em; }
+.vault-detail {
+  position:absolute; z-index:5;
+  /* Use inset + margin:auto so GSAP scale/opacity works without fighting CSS transform */
+  inset: 0;
+  margin: auto;
+  width:min(310px,90%);
+  height: fit-content;
+  padding:18px;
+  display:flex; flex-direction:column; gap:10px;
+  background:var(--paper); border:1px solid #b9c2af;
+  box-shadow:0 12px 40px #17201626;
+  color:var(--ink); text-align:left;
+  transform-origin: center center;
+}
+.vault-detail[hidden] { display:none; }
+.vault-detail strong { font-size:14px; }
+.vault-detail span { font-size:12px; line-height:1.5; }
+.vault-detail small { color:var(--muted); font-size:10px; line-height:1.5; }
+
+/* ── Architecture layers ─────────────────────────────────────────────── */
+.arch-layer { display:block; width:100%; text-align:left; color:inherit; font:inherit;
+  cursor:pointer; transition:border-color .2s; }
+.arch-layer:hover { border-color:var(--accent-dark); }
+.arch-layer[aria-expanded="true"],
+.arch-layer.is-arch-active { box-shadow:inset 4px 0 var(--accent-dark); border-color:var(--accent-dark); }
+.arch-detail {
+  max-width:900px; min-height:42px; margin:14px auto 0;
+  padding:12px 16px; border-left:2px solid var(--accent-dark);
+  background:rgba(82,125,54,.07); color:var(--muted);
+  font-size:12px; line-height:1.6;
+}
+
+/* ── Roadmap item hover ──────────────────────────────────────────────── */
+.roadmap-item { cursor:default; }
+.roadmap-arrow { transition:color .2s; }
+
+/* ── Reduced motion overrides ───────────────────────────────────────── */
+@media (max-width:760px) {
+  .engine-controls { margin-bottom:0; }
+  .engine-controls-hint { flex-basis:100%; margin-left:0; }
+  .vault-detail { width:min(290px,95%); }
+}

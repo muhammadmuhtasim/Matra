@@ -1,0 +1,26 @@
+ :root {
+  --paper: #f3f1eb;
+  --paper-deep: #e9e6dd;
+  --ink: #20221e;
+  --muted: #73756e;
+  --line: #d4d2c9;
+  --dark: #171a17;
+  --dark-soft: #222722;
+  --dark-line: #3a413a;
+  --accent: #9be16e;
+  --accent-dark: #527d36;
+  --serif: "Noto Serif Bengali", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+  --mono: "DM Mono", monospace;
+  /* Script faces for the native words in Chapter 4 (see css/fonts.css). */
+  --font-uxa: "Uxa", "Noto Serif Bengali", Georgia, serif;
+  --font-meetei: "Noto Sans Meetei Mayek", "Noto Sans Bengali", sans-serif;
+  --font-chakma: "Noto Sans Chakma", sans-serif;
+  --font-syloti: "Noto Sans Syloti Nagri", sans-serif;
+  --topbar-height: 66px;
+  --footer-height: 62px;
+  --page-gutter: clamp(24px, 7.5vw, 124px);
+}
+html { background: var(--paper); color: var(--ink); font-family: var(--sans); }
+body { background: var(--paper); font-size: 16px; -webkit-font-smoothing: antialiased; }
+::selection { color: var(--dark); background: var(--accent); }
